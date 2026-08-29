@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from './assets/logo.svg'; // Make sure logo.svg is in your assets folder
+import logo from './assets/logo.svg'; 
 import heroBg from './assets/hero-bg.jpeg';
 import impactBooks from './assets/impact-books.jpeg';
 import shopClothes from './assets/shop-clothes.jpeg';
@@ -9,14 +9,30 @@ import shopPlants from './assets/shop-plants.jpeg';
 import shopCollectables from './assets/shop-collectables.jpeg';
 import shopFurniture from './assets/shop-furniture.jpeg';
 import donateBanner from './assets/donate-banner.jpeg';
+// --- Story & Community Imports ---
+import lindaNini from './assets/Linda-Nini.jpeg';
+import acePic from './assets/ace-pic.jpeg';
+import streetStall from './assets/street-stall-1.jpeg';
+import outreachBoxes from './assets/outreach-boxes.jpeg';
+import cocosLogo from './assets/cocos-logo.jpeg';
+import lcaraLogo from './assets/LCARA-logo.jpeg';
+import donation2 from './assets/donation-2.jpeg';
+import bookStall from './assets/book-stall.jpeg';
+import donation5 from './assets/donation-5.jpeg';
+import donation7 from './assets/donation-7.jpeg';
+import donation4 from './assets/donation-4.jpeg';
+import communityPic3 from './assets/community-pic-3.jpeg';
+import donation1 from './assets/donation-1.jpeg';
+import donation3 from './assets/donation-3.jpeg';
+import booksDonations from './assets/books-donations.jpeg';
+import picture2011 from './assets/2011-picture.jpeg';
+
 
 /* ------------------------------------------------------------------ */
 /*  Design tokens                                                     */
 /* ------------------------------------------------------------------ */
 
 const BURGUNDY = "#8B0000";
-// I kept the secure "digital bouncer" link here to protect them from bots, 
-// but if they insist on the direct link later, you can swap it with the chat.whatsapp.com link they provided!
 const WHATSAPP_URL =
   "https://wa.me/27835895475?text=Hi!%20I%20saw%20your%20website%20and%20I%20would%20like%20to%20join%20the%20WhatsApp%20group%20to%20get%20updates%20and%20reserve%20items.";
 const FACEBOOK_URL = "https://web.facebook.com/CornerstoneCharityShop";
@@ -177,8 +193,9 @@ export default function App() {
 
             {/* Desktop nav */}
             <nav className="hidden md:flex items-center gap-8">
-              <NavLink href="#impact">Our Impact</NavLink>
-              <NavLink href="#shop">Shop</NavLink>
+              <NavLink href="#story">Our Story</NavLink>
+              <NavLink href="#community">Community</NavLink>
+              <NavLink href="#in-store">In Store</NavLink>
               <NavLink href="#donate">Donate</NavLink>
               <NavLink href="#visit">Visit Us</NavLink>
               <a
@@ -210,8 +227,9 @@ export default function App() {
         {menuOpen && (
           <div className="md:hidden border-t border-stone-200 bg-stone-50">
             <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col gap-5">
-              <NavLink href="#impact" onClick={closeMenu}>Our Impact</NavLink>
-              <NavLink href="#shop" onClick={closeMenu}>Shop</NavLink>
+              <NavLink href="#story" onClick={closeMenu}>Our Story</NavLink>
+              <NavLink href="#community" onClick={closeMenu}>Community</NavLink>
+              <NavLink href="#in-store" onClick={closeMenu}>In Store</NavLink>
               <NavLink href="#donate" onClick={closeMenu}>Donate</NavLink>
               <NavLink href="#visit" onClick={closeMenu}>Visit Us</NavLink>
               <a
@@ -272,81 +290,200 @@ export default function App() {
         </section>
 
         {/* -------------------------------------------------------- */}
-        {/*  Our Impact                                             */}
+        {/*  Our Story                                              */}
         {/* -------------------------------------------------------- */}
-        <section id="impact" className="bg-white border-b border-stone-200">
+        <section id="story" className="bg-white border-b border-stone-200">
           <div className="max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-28">
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-              {/* Image left */}
-              <div className="rounded-lg overflow-hidden bg-stone-200 aspect-[4/3] order-2 md:order-1 shadow-md">
-                <img
-                  src={impactBooks}
-                  alt="Free community book box"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              {/* Text right */}
-              <div className="order-1 md:order-2">
-                <p
-                  className="text-sm font-semibold uppercase tracking-[0.2em] mb-4"
-                  style={{ color: BURGUNDY }}
-                >
-                  Our Impact
+              
+              {/* Left: Text Content */}
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] mb-4" style={{ color: BURGUNDY }}>
+                  Since 2011
                 </p>
                 <h2 className="font-serif text-3xl md:text-4xl text-stone-900 mb-6 leading-snug">
-                  More Than A Thrift Shop
+                  From the Side Streets to Cornerstone Park
                 </h2>
-                
-                <p className="text-stone-600 leading-relaxed mb-10 text-lg">
-                  Our charity store supports and uplifts the community by providing financial aid, donations of food and household goods to the elderly, old age homes, animal shelters and youth care facilities in Johannesburg. By supporting our store you are helping make a difference in the world.
-                </p>
-
-                <div className="flex flex-col gap-7">
-                  <ImpactItem
-                    icon={BookIcon}
-                    title="Promoting Literacy"
-                    desc="Supporting the Fairsocial library and Espoir Academy with books and reading resources for local learners."
-                  />
-                  <ImpactItem
-                    icon={SproutIcon}
-                    title="Community Gardens"
-                    desc="Funding local, sustainable vegetable gardens that put fresh produce back into the neighbourhood."
-                  />
-                  <ImpactItem
-                    icon={SchoolIcon}
-                    title="School Makeovers"
-                    desc="Assisting in classroom turnaround projects, giving local schools a fresh, welcoming space to learn."
-                  />
+                <div className="space-y-4 text-stone-600 leading-relaxed text-lg mb-8">
+                  <p>
+                    Heart of Cornerstone started back in 2011 with a simple goal: to support our local community. What began as a humble stall on the side streets has grown into the beautiful, bustling charity shop we call home today.
+                  </p>
+                  <p>
+                    Whether you are a regular looking for your next treasure or stopping by for the first time, Linda and Nini are always here to welcome you with a smile. 
+                  </p>
+                  <p className="flex items-center gap-3 pt-2 font-medium text-stone-800">
+                    <HeartIcon className="w-5 h-5" style={{ color: BURGUNDY }} />
+                    Say hello to Ace, our rescued shop dog and Chief Greeting Officer!
+                  </p>
                 </div>
+              </div>
+
+              {/* Right: Photo Collage */}
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                <img
+                  src={lindaNini}
+                  alt="Linda and Nini outside the shop"
+                  className="col-span-2 w-full aspect-[4/3] object-cover rounded-lg shadow-md"
+                />
+                <img
+                  src={streetStall}
+                  alt="Our original street stall in 2011"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
+                <img
+                  src={acePic}
+                  alt="Ace the shop dog"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
               </div>
             </div>
           </div>
         </section>
 
         {/* -------------------------------------------------------- */}
-        {/*  What We Sell (Expanded Grid)                           */}
+        {/*  Our Community                                          */}
         {/* -------------------------------------------------------- */}
-        <section id="shop" className="max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-28 bg-stone-50">
-          <div className="text-center mb-14 md:mb-16">
-            <p
-              className="text-sm font-semibold uppercase tracking-[0.2em] mb-4"
-              style={{ color: BURGUNDY }}
-            >
-              Full of Great Surprises
-            </p>
-            <h2 className="font-serif text-3xl md:text-4xl text-stone-900">
-              Discover Unique Finds
-            </h2>
-          </div>
+        <section id="community" className="bg-stone-100 border-b border-stone-200">
+          <div className="max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-28">
+            <div className="text-center mb-10 md:mb-12">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] mb-4" style={{ color: BURGUNDY }}>
+                Making a Difference
+              </p>
+              <h2 className="font-serif text-3xl md:text-4xl text-stone-900 mb-6">
+                Community Action
+              </h2>
+              <p className="text-stone-600 leading-relaxed text-lg max-w-2xl mx-auto">
+                Every purchase and donation directly helps us proudly support local organizations, youth care facilities, old age homes, and animal rescue shelters across Johannesburg.
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-            <ShopCard image={shopClothes} title="Clothing & Shoes" />
-            <ShopCard image={shopBooks} title="Books & Toys" />
-            <ShopCard image={shopArt} title="Art & Paintings" />
-            <ShopCard image={shopCollectables} title="Collectables" />
-            <ShopCard image={shopFurniture} title="Furniture & Crockery" />
-            <ShopCard image={shopPlants} title="Plants" />
+            {/* Horizontal Swipe Gallery */}
+            <div className="flex overflow-x-auto gap-4 pb-8 snap-x snap-mandatory">
+              
+              {/* Image 1 */}
+              <img 
+                src={donation2} 
+                alt="Meals and supplies donated to local organizations" 
+                className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
+              />
+              
+              {/* Image 2 (Logo needing a white background and contain) */}
+              <img 
+                src={bookStall} 
+                alt="book stall supporting local community" 
+                className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
+              />
+
+              {/* Image 3 (Logo needing a white background and contain) */}
+              <img 
+                src={donation5} 
+                alt="bags of donations for local community" 
+                className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
+              />
+
+              <img 
+                src={donation7} 
+                alt="donations for local community" 
+                className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
+              /> 
+
+              <img 
+                src={donation4} 
+                alt="donations for local community" 
+                className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
+              /> 
+              
+              <img 
+                src={communityPic3} 
+                alt="garden and plants donated to local community" 
+                className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
+              /> 
+
+              <img 
+                src={donation1} 
+                alt="garden and plants donated to local community" 
+                className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
+              />
+
+              <img 
+                src={donation3} 
+                alt="donations for local community" 
+                className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
+              />
+
+              <img 
+                src={outreachBoxes} 
+                alt="donations to cape town outreach boxes" 
+                className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
+              />
+
+              <img 
+                src={booksDonations} 
+                alt="donations of books to local community" 
+                className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
+              />
+
+              <img 
+                src={picture2011} 
+                alt="2011 picture of the original street stall" 
+                className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
+              />
+
+            </div>
+            
+            <div className="text-center mt-2">
+              <p className="text-xs uppercase tracking-widest text-stone-400 font-semibold">
+                &larr; Swipe to explore &rarr;
+              </p>
+            </div>
+            
+          </div>
+        </section>
+
+        {/* -------------------------------------------------------- */}
+        {/*  What We Sell (Swipe Gallery)                           */}
+        {/* -------------------------------------------------------- */}
+        <section id="in-store" className="bg-stone-50 border-b border-stone-200">
+          <div className="max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-28">
+            <div className="text-center mb-10 md:mb-12">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] mb-4" style={{ color: BURGUNDY }}>
+                Full of Great Surprises
+              </p>
+              <h2 className="font-serif text-3xl md:text-4xl text-stone-900">
+                What We Sell
+              </h2>
+            </div>
+
+            {/* Gallery: Horizontal on Mobile, Grid on Desktop */}
+            <div className="flex md:grid md:grid-cols-3 gap-4 md:gap-8 overflow-x-auto md:overflow-visible pb-8 md:pb-0 snap-x snap-mandatory md:snap-none">
+              
+              <div className="w-64 md:w-auto shrink-0 md:shrink snap-center md:snap-align-none">
+                <ShopCard image={shopClothes} title="Clothing & Shoes" />
+              </div>
+              <div className="w-64 md:w-auto shrink-0 md:shrink snap-center md:snap-align-none">
+                <ShopCard image={shopBooks} title="Books & Toys" />
+              </div>
+              <div className="w-64 md:w-auto shrink-0 md:shrink snap-center md:snap-align-none">
+                <ShopCard image={shopArt} title="Art & Paintings" />
+              </div>
+              <div className="w-64 md:w-auto shrink-0 md:shrink snap-center md:snap-align-none">
+                <ShopCard image={shopCollectables} title="Collectables" />
+              </div>
+              <div className="w-64 md:w-auto shrink-0 md:shrink snap-center md:snap-align-none">
+                <ShopCard image={shopFurniture} title="Furniture & Crockery" />
+              </div>
+              <div className="w-64 md:w-auto shrink-0 md:shrink snap-center md:snap-align-none">
+                <ShopCard image={shopPlants} title="Plants" />
+              </div>
+
+            </div>
+            
+            {/* Swipe helper text - Hidden on Desktop! */}
+            <div className="text-center mt-2 md:hidden">
+              <p className="text-xs uppercase tracking-widest text-stone-400 font-semibold">
+                &larr; Swipe to explore &rarr;
+              </p>
+            </div>
           </div>
         </section>
 
