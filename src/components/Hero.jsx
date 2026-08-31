@@ -13,7 +13,7 @@ export default function Hero({ facebookUrl, burgundyColor }) {
       <img
         src={heroBg}
         alt="Heart of Cornerstone shop interior"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-[30%_center] md:object-center"
       />
       <div className="absolute inset-0 bg-stone-900/70" />
 
