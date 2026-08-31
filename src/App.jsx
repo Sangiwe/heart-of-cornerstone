@@ -146,6 +146,7 @@ const ShopCard = ({ image, title }) => (
       <img
         src={image}
         alt={title}
+        loading="lazy"
         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
       />
     </div>
@@ -323,16 +324,19 @@ export default function App() {
                 <img
                   src={lindaNini}
                   alt="Linda and Nini outside the shop"
+                  loading="lazy"
                   className="col-span-2 w-full aspect-[4/3] object-cover rounded-lg shadow-md"
                 />
                 <img
                   src={streetStall}
                   alt="Our original street stall in 2011"
+                  loading="lazy"
                   className="w-full aspect-square object-cover rounded-lg shadow-md"
                 />
                 <img
                   src={acePic}
                   alt="Ace the shop dog"
+                  loading="lazy"
                   className="w-full aspect-square object-cover rounded-lg shadow-md"
                 />
               </div>
@@ -364,6 +368,7 @@ export default function App() {
               <img 
                 src={donation2} 
                 alt="Meals and supplies donated to local organizations" 
+                loading="lazy"
                 className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
               />
               
@@ -371,6 +376,7 @@ export default function App() {
               <img 
                 src={bookStall} 
                 alt="book stall supporting local community" 
+                loading="lazy"
                 className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
               />
 
@@ -378,54 +384,63 @@ export default function App() {
               <img 
                 src={donation5} 
                 alt="bags of donations for local community" 
+                loading="lazy"
                 className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
               />
 
               <img 
                 src={donation7} 
                 alt="donations for local community" 
+                loading="lazy"
                 className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
               /> 
 
               <img 
                 src={donation4} 
                 alt="donations for local community" 
+                loading="lazy"
                 className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
               /> 
               
               <img 
                 src={communityPic3} 
                 alt="garden and plants donated to local community" 
+                loading="lazy"
                 className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
               /> 
 
               <img 
                 src={donation1} 
                 alt="garden and plants donated to local community" 
+                loading="lazy"
                 className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
               />
 
               <img 
                 src={donation3} 
                 alt="donations for local community" 
+                loading="lazy"
                 className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
               />
 
               <img 
                 src={outreachBoxes} 
                 alt="donations to cape town outreach boxes" 
+                loading="lazy"
                 className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
               />
 
               <img 
                 src={booksDonations} 
                 alt="donations of books to local community" 
+                loading="lazy"
                 className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
               />
 
               <img 
                 src={picture2011} 
                 alt="2011 picture of the original street stall" 
+                loading="lazy"
                 className="w-72 md:w-96 shrink-0 aspect-[4/3] object-cover rounded-lg snap-center shadow-sm" 
               />
 
