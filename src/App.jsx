@@ -9,7 +9,7 @@ import Visit from './components/Visit';
 import Footer from './components/Footer';
 
 const BURGUNDY = "#8B0000";
-const WHATSAPP_URL = "https://wa.me/27835895475?text=Hi!%20I%20saw%20your%20website%20and%20I%20would%20like%20to%20join%20the%20WhatsApp%20group%20to%20get%20updates%20and%20reserve%20items.";
+const WHATSAPP_URL = "https://wa.me/27835895475?text=Hi!%20I%20saw%20your%20website%20and%20I%20would%20like%20to%20join%20the%20WhatsApp%20group%20to%20get%20updates%20on%20the%20daily%20new%20arrivals.";
 const FACEBOOK_URL = "https://web.facebook.com/CornerstoneCharityShop";
 
 export default function App() {

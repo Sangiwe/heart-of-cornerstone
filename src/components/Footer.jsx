@@ -2,11 +2,7 @@ import React from "react";
 
 const HeartIcon = ({ className = "w-6 h-6", style }) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className={className} style={style} aria-hidden="true">
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M12 20.25s-7.5-4.55-9.75-9C.85 8.05 2.4 4.75 5.6 4.2c1.9-.33 3.7.6 4.9 2.15C11.7 4.8 13.5 3.87 15.4 4.2c3.2.55 4.75 3.85 3.35 7.05-2.25 4.45-9.75 9-9.75 9z"
-    />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 20.25s-7.5-4.55-9.75-9C.85 8.05 2.4 4.75 5.6 4.2c1.9-.33 3.7.6 4.9 2.15C11.7 4.8 13.5 3.87 15.4 4.2c3.2.55 4.75 3.85 3.35 7.05-2.25 4.45-9.75 9-9.75 9z" />
   </svg>
 );
 
@@ -18,23 +14,66 @@ const FacebookIcon = ({ className = "w-5 h-5" }) => (
 
 export default function Footer({ burgundyColor, facebookUrl }) {
   return (
-    <footer className="bg-stone-900 text-stone-300">
-      <div className="max-w-6xl mx-auto px-6 md:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-2">
-          <HeartIcon className="w-4 h-4" style={{ color: burgundyColor }} />
-          <p className="text-sm">
-            &copy; {new Date().getFullYear()} Heart of Cornerstone. All rights reserved.
+    <footer className="bg-stone-900 text-stone-300 py-12 md:py-16">
+      <div className="max-w-6xl mx-auto px-6 md:px-8">
+        
+        {/* Top Section: Grid Layout */}
+        <div className="grid grid-cols-2 md:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-16">
+          
+          {/* Column 1: Brand & Trust (Spans 2 cols on mobile, 5 on desktop) */}
+          <div className="col-span-2 md:col-span-5 flex flex-col gap-4 md:pr-8">
+            <div className="flex items-center gap-2">
+              <HeartIcon className="w-5 h-5" style={{ color: burgundyColor }} />
+              <span className="font-serif text-xl text-white">Heart of Cornerstone</span>
+            </div>
+            <p className="text-sm text-stone-400 leading-relaxed max-w-xs">
+              Turning pre-loved goods into funds for the community. Supporting local organizations across Johannesburg.
+            </p>
+          </div>
+
+          {/* Column 2: Quick Links (Spans 1 col on mobile, 3 on desktop) */}
+          <div className="col-span-1 md:col-span-3 flex flex-col gap-4">
+            <h4 className="text-white font-semibold tracking-wider text-sm uppercase">Quick Links</h4>
+            <nav className="flex flex-col gap-3">
+              <a href="#story" className="text-sm text-stone-400 hover:text-white transition-colors w-fit">Our Story</a>
+              <a href="#in-store" className="text-sm text-stone-400 hover:text-white transition-colors w-fit">What We Sell</a>
+              <a href="#community" className="text-sm text-stone-400 hover:text-white transition-colors w-fit">Community Action</a>
+              <a href="#donate" className="text-sm text-stone-400 hover:text-white transition-colors w-fit">How to Donate</a>
+            </nav>
+          </div>
+
+          {/* Column 3: Connect (Spans 1 col on mobile, 4 on desktop) */}
+          <div className="col-span-1 md:col-span-4 flex flex-col gap-4">
+            <h4 className="text-white font-semibold tracking-wider text-sm uppercase">Connect</h4>
+            <div className="flex flex-col gap-3">
+              <a
+                href={facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-stone-400 hover:text-white transition-colors w-fit"
+              >
+                <FacebookIcon className="w-4 h-4" />
+                Follow on Facebook
+              </a>
+              <p className="text-sm text-stone-400 leading-relaxed mt-1">
+                Cornerstone Park<br />
+                19 West Turffontein Rd
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        {/* Bottom Section: Copyright & Built By */}
+        <div className="pt-8 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-stone-500">
+            &copy; {new Date().getFullYear()} Heart of Cornerstone Charity Shop. All rights reserved.
+          </p>
+          <p className="text-xs text-stone-500">
+            Built by <a href="#" className="text-stone-400 hover:text-white transition-colors underline underline-offset-4">Sangiwe Nkwanyana</a>
           </p>
         </div>
-        <a
-          href={facebookUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm text-stone-300 hover:text-white transition-colors"
-        >
-          <FacebookIcon className="w-4 h-4" />
-          @CornerstoneCharityShop
-        </a>
+
       </div>
     </footer>
   );
