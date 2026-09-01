@@ -17,10 +17,10 @@ export default function Footer({ burgundyColor, facebookUrl }) {
     <footer className="bg-stone-900 text-stone-300 py-12 md:py-16">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         
-        {/* Top Section: Grid Layout */}
+        
         <div className="grid grid-cols-2 md:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-16">
           
-          {/* Column 1: Brand & Trust (Spans 2 cols on mobile, 5 on desktop) */}
+          
           <div className="col-span-2 md:col-span-5 flex flex-col gap-4 md:pr-8">
             <div className="flex items-center gap-2">
               <HeartIcon className="w-5 h-5" style={{ color: burgundyColor }} />
@@ -31,7 +31,7 @@ export default function Footer({ burgundyColor, facebookUrl }) {
             </p>
           </div>
 
-          {/* Column 2: Quick Links (Spans 1 col on mobile, 3 on desktop) */}
+          
           <div className="col-span-1 md:col-span-3 flex flex-col gap-4">
             <h4 className="text-white font-semibold tracking-wider text-sm uppercase">Quick Links</h4>
             <nav className="flex flex-col gap-3">
@@ -42,7 +42,7 @@ export default function Footer({ burgundyColor, facebookUrl }) {
             </nav>
           </div>
 
-          {/* Column 3: Connect (Spans 1 col on mobile, 4 on desktop) */}
+          {/* (Spans 1 col on mobile, 4 on desktop) */}
           <div className="col-span-1 md:col-span-4 flex flex-col gap-4">
             <h4 className="text-white font-semibold tracking-wider text-sm uppercase">Connect</h4>
             <div className="flex flex-col gap-3">
@@ -64,7 +64,7 @@ export default function Footer({ burgundyColor, facebookUrl }) {
 
         </div>
 
-        {/* Bottom Section: Copyright & Built By */}
+        {/* Copyright & Built By */}
         <div className="pt-8 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-stone-500">
             &copy; {new Date().getFullYear()} Heart of Cornerstone Charity Shop. All rights reserved.

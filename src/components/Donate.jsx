@@ -20,7 +20,7 @@ export default function Donate() {
         loading="lazy"
         className="absolute inset-0 w-full h-full object-cover"
       />
-      {/* Dark Overlay so the text pops */}
+      
       <div className="absolute inset-0 bg-stone-900/80" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-8 py-20 text-center">
