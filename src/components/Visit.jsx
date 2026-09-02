@@ -97,7 +97,7 @@ export default function Visit({ burgundyColor, whatsappUrl }) {
                 Get First Dibs!
               </h3>
               <p className="text-stone-600 leading-relaxed text-sm mb-4 max-w-xs">
-                We post our newest treasures here first. Join our community group to see daily new arrivals and reserve items before they even hit the shop floor.
+                We post our newest treasures here first. Join our community group to see daily new arrivals.
               </p>
               <a
                 href={whatsappUrl}
