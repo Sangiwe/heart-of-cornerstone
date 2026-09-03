@@ -58,6 +58,7 @@ export default function Header({ burgundyColor, whatsappUrl }) {
             <NavLink href="#community">Community</NavLink>
             <NavLink href="#in-store">In Store</NavLink>
             <NavLink href="#donate">Donate</NavLink>
+            <NavLink href="#partners">Partners</NavLink>
             <NavLink href="#visit">Visit Us</NavLink>
             <a
               href={whatsappUrl}
@@ -90,6 +91,7 @@ export default function Header({ burgundyColor, whatsappUrl }) {
             <NavLink href="#community" onClick={closeMenu}>Community</NavLink>
             <NavLink href="#in-store" onClick={closeMenu}>In Store</NavLink>
             <NavLink href="#donate" onClick={closeMenu}>Donate</NavLink>
+            <NavLink href="#partners" onClick={closeMenu}>Partners</NavLink>
             <NavLink href="#visit" onClick={closeMenu}>Visit Us</NavLink>
             <a
               href={whatsappUrl}

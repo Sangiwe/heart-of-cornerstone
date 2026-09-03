@@ -9,7 +9,7 @@ import mowVolunteers4 from '../assets/mealsOnWheels-volunteers- pic4.jpeg';
 import nkanyisaWCC1 from '../assets/nkanyisaWCC-pic1.jpeg';
 import nkanyisaWCC2 from '../assets/nkanyisaWCC-pic2.jpeg';
 import feralDomesticPic1 from '../assets/feralDomestic-pic1.jpeg';
-import feralDomesticPic2 from '../assets/feralDomestic-pic2.jpeg';
+import feralDomesticPic2 from '../assets/logos/feralDomestic-pic2.jpeg';
 
 // Reusable Impact Card Component (With Mobile-Friendly Slider & Dynamic Category)
 const ImpactCard = ({ title, category, partner, partnerUrl, description, images, burgundyColor }) => {
