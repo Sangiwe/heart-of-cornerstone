@@ -97,7 +97,7 @@ export default function Footer({ burgundyColor, facebookUrl }) {
 
           {/* Right Side: Built By */}
           <p className="text-xs text-stone-500">
-            Built by <a href="#" className="text-stone-400 hover:text-white transition-colors underline underline-offset-4">Sangiwe Nkwanyana</a>
+            Built by <a href="https://sangiwe-portfolio.netlify.app/" className="text-stone-400 hover:text-white transition-colors underline underline-offset-4">Sangiwe Nkwanyana</a>
           </p>
           
         </div>
